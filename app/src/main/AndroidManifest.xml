@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.aravattan.reubrotraining">
-    <uses-permission android:name="android.permission.INTERNET"/>
 
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -22,7 +22,8 @@
         </activity>
         <activity android:name=".MainActivity" />
         <activity android:name=".signupActivity" />
-        <activity android:name=".tabActivity"></activity>
+        <activity android:name=".tabActivity" />
+        <activity android:name=".RecyclerActivity"></activity>
     </application>
 
 </manifest>

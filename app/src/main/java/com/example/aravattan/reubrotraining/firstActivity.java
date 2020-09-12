@@ -14,12 +14,13 @@ public class firstActivity extends AppCompatActivity {
         setContentView(R.layout.activity_first);
 
 
-        Button b4 ,b5,b6;
+        Button b4 ,b5,b6,b7;
 
 
         b4=findViewById(R.id.button);
         b5=findViewById(R.id.button3);
         b6=findViewById(R.id.button4);
+        b7=findViewById(R.id.button6);
         b4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -42,6 +43,14 @@ public class firstActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i=new Intent(getApplicationContext(),tabActivity.class);
+                startActivity(i);
+            }
+        });
+
+        b7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i=new Intent(getApplicationContext(),RecyclerActivity.class);
                 startActivity(i);
             }
         });
